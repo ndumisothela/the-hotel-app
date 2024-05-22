@@ -10,7 +10,7 @@ import {
   updateHotel,
 } from "../controllers/hotelController.js";
 import Hotel from "../models/Hotel.js";
-import {verifyAdmin} from "../utililies/verifyToken.js"
+import {verifyAdmin} from "../utilities/verifyToken.js"
 const router = express.Router();
 
 //CREATE

@@ -40,17 +40,25 @@ export const getHotel = async (req, res, next) => {
   }
 };
 export const getHotels = async (req, res, next) => {
-  const { min, max, ...others } = req.query;
+  const { min, max, limit, featured, ...others } = req.query;
   try {
-    const hotels = await Hotel.find({
+    const query = {
       ...others,
-      cheapestPrice: { $gt: min | 1, $lt: max || 999 },
-    }).limit(req.query.limit);
+      cheapestPrice: { $gt: min || 1, $lt: max || 9999 },
+    };
+    
+    if (featured) {
+      query.featured = featured === 'true';
+    }
+
+    const hotels = await Hotel.find(query).limit(Number(limit) || 4);
+
     res.status(200).json(hotels);
   } catch (err) {
     next(err);
   }
 };
+
 export const countByCity = async (req, res, next) => {
   const cities = req.query.cities.split(",");
   try {

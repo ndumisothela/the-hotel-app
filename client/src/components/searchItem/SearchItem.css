@@ -14,7 +14,7 @@
     object-fit: cover;
   }
   
-  .siDesc {
+  .siDescription {
     display: flex;
     flex-direction: column;
     gap: 10px;

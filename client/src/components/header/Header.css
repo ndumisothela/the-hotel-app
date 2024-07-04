@@ -1,9 +1,11 @@
 .header {
     background-color: #008031;
+    background-image: url("https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2754.jpg?ga=GA1.1.2098176417.1718957229&semt=ais_user");
     color: white;
     display: flex;
     justify-content: center;
     position: relative;
+    font-family:monospace;
   }
   
   .headerContainer {

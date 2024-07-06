@@ -31,7 +31,7 @@ mongoose.connection.on("connected", () => {
 });
 
 // Middleware setup
-app.use(cors({origin: 'https://thela-bookings-frontend.onrender.com'})); // Enable CORS for all routes
+app.use(cors()); // Enable CORS for all routes
 app.use(cookieParser()); // Use cookie-parser middleware for parsing cookies
 app.use(express.json()); // Parse incoming JSON requests
 

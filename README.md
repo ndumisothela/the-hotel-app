@@ -3,6 +3,10 @@ Utilizing the MERN stack (MongoDB, Express.js, React.js, and Node.js), the appli
 providing robust functionalities tailored to each role. The application incorporates modern development practices,
 including the Context API, JWT for authentication, custom hooks, and a React calendar.
 
+users can register by clicking the register button to make their own profile for the bookings.
+
+admin backend is accessable via a admin button .only  authorized personel can login to admin. because of the sensitive information , admin page does not allow anyone to register. you can only be registered by I.T through management orders.  
+
 To view normal user interface 
 cd client 
 npm start 
@@ -19,11 +23,10 @@ live link to the site
 
 https://thela-bookings-frontend.onrender.com/
 
-https://thela-bookings-admin.onrender.com/
 
-https://thela-bookings-backend.onrender.com/
 
-use these credentials
+
+admin credentials
 
 password : thelaNdu
 password : 12Thela
